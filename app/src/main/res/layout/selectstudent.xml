@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stdent_name"
+        android:text="ihlibliblibligvblbl"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#3cd2ad"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_fix"
+        android:layout_below="@+id/stdent_name"
+        android:text="Class:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/class_remote"
+        android:layout_toRightOf="@+id/class_fix"
+        android:layout_below="@+id/stdent_name"
+        android:text="luyouvoyuyvuuyv"
+        android:textColor="#34339a"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollln0_fix"
+        android:layout_below="@+id/class_fix"
+        android:text="Roll No:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rolllno_remote"
+        android:layout_toRightOf="@+id/rollln0_fix"
+        android:layout_below="@+id/class_remote"
+        android:text="00000000"
+        android:textColor="#34339a"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nativeplace_fix"
+        android:layout_below="@+id/rollln0_fix"
+        android:text="Native Place:"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nativeplace_remote"
+        android:layout_toRightOf="@+id/nativeplace_fix"
+        android:layout_below="@+id/rolllno_remote"
+        android:text="bhopal"
+        android:textColor="#34339a"
+        android:textSize="20dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        android:id="@+id/cardview"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:thicknessRatio="1.9">
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:id="@+id/imageView1"
+            android:src="@drawable/bookthird"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
