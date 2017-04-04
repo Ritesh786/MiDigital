@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#522ea9">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#522ea9">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERVICES"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:id="@+id/textstud"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagestud"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textstud"
+        android:src="@drawable/bookthird"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ritesh"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:id="@+id/stud_name"
+        android:layout_gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/atteone"
+            android:text="ATTENDANCE"
+            />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/hone"
+            android:text="HOMEWORK"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/rone"
+            android:text="REMARK"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/mone"
+            android:text="FEES"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/sone"
+            android:text="CIRCULAR"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:drawableTop = "@drawable/eone"
+            android:text="@string/exams"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

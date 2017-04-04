@@ -15,7 +15,7 @@ public class StudentDetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_detail);
+        setContentView(R.layout.studenttiles);
 
         mstudimage = (ImageView) findViewById(R.id.imagestud);
         Intent mIntent = getIntent();
