@@ -1,167 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#522ea9">
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_attendance_summary"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#522ea9"
-    tools:context="com.midigital.fujitsu.midigital.Parent.AttendanceSummary">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ATTENDANCE SUMMARY"
-        android:textSize="20dp"
-        android:textColor="#ffff"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:fontFamily="serif"
-        android:layout_marginBottom="35dp"
-
-        />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#fff"
-        android:layout_margin="10dp"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/calendar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
 
-        >
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/customize_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="left"/>
+
+            <Button
+                android:id="@+id/show_dialog_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="right"/>
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TOTAL NO. OF DAYS"
-            android:textSize="20dp"
-            android:layout_margin="10dp"
-            android:textColor="#34339a"
-            />
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="100"
-            android:layout_marginTop="10dp"
-             android:textSize="20dp"
-            android:layout_marginLeft="40dp"
-             android:id="@+id/totalday_edittext"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#fff"
-        android:layout_margin="10dp"
-       >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NUMBER OF DAYS PRESENT"
-            android:textSize="20dp"
-            android:layout_margin="10dp"
-            android:textColor="#34339a"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="50"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/nuofdays_edittext"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#fff"
-        android:layout_margin="10dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ATTENDANCE PERCENTAGE"
-            android:textSize="20dp"
-            android:layout_margin="10dp"
-            android:textColor="#34339a"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="50%"
-            android:layout_marginTop="10dp"
-            android:textSize="20dp"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/attendance_edittext"/>
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="VIEW DATEWISE ATTENDANCE"
-        android:textSize="20dp"
-        android:textColor="#ffff"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:fontFamily="serif"
-        android:layout_marginBottom="10dp"
-        />
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="FROM DATE"
-        android:layout_margin="10dp"
-        android:background="#ffff"
-        android:id="@+id/fromdate_etext"
-        android:textColorHint="#34339a"
-        android:inputType="date"
-        android:focusable="false"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="TO DATE"
-        android:layout_margin="10dp"
-        android:background="#ffff"
-        android:id="@+id/todate_etext"
-        android:textColorHint="#34339a"
-        android:inputType="date"
-        android:focusable="false"/>
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="VIEW DETAIL"
-        android:textSize="20sp"
-        android:background="#fb736c"
-        android:id="@+id/viewattendance_btn"
-        android:textColor="#ffffff"
-        android:layout_marginTop="35dp"/>
-
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
-
 </ScrollView>
-
-
-
-

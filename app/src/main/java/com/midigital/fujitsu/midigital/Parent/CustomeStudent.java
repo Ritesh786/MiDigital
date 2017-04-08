@@ -13,6 +13,7 @@ public class CustomeStudent {
     private String place;
     private int image;
     public CustomeStudent() {
+
     }
 
     public CustomeStudent(String name,String clas, int rolldigit, String place,int image) {

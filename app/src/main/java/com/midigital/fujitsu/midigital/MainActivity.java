@@ -21,7 +21,7 @@ import com.midigital.fujitsu.midigital.Teacher.TeacherLoginPage;
 
 import java.util.HashMap;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener , BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
 
        Button mlginparent,mlginteacher;
 
@@ -43,44 +43,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mlginparent.setOnClickListener(this);
         mlginteacher.setOnClickListener(this);
 
-//        Hash_file_maps = new HashMap<String, Integer>();
-//
-//        sliderLayout = (SliderLayout)findViewById(R.id.slider);
-//
-//        Hash_file_maps.put("Mi_Digital Logo", Images[0]);
-//        Hash_file_maps.put("Book Image1", Images[1]);
-//        Hash_file_maps.put("Book Image2", Images[2]);
-//        Hash_file_maps.put("Book Image3", Images[3]);
-//
-//
-//        for(String name : Hash_file_maps.keySet()){
-//
-//            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
-//            textSliderView
-//                    .description(name)
-//                    .image(Hash_file_maps.get(name))
-//                    .setScaleType(BaseSliderView.ScaleType.Fit)
-//                    .setOnSliderClickListener(this);
-//            textSliderView.bundle(new Bundle());
-//            textSliderView.getBundle()
-//                    .putString("extra",name);
-//            sliderLayout.addSlider(textSliderView);
-//        }
-//        sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
-//        sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-//        sliderLayout.setCustomAnimation(new DescriptionAnimation());
-//        sliderLayout.setDuration(3000);
-//        sliderLayout.addOnPageChangeListener(this);
+        Hash_file_maps = new HashMap<String, Integer>();
+
+        sliderLayout = (SliderLayout)findViewById(R.id.slider);
+
+        Hash_file_maps.put("Mi_Digital Logo", Images[0]);
+        Hash_file_maps.put("Book Image1", Images[1]);
+        Hash_file_maps.put("Book Image2", Images[2]);
+        Hash_file_maps.put("Book Image3", Images[3]);
+
+
+        for(String name : Hash_file_maps.keySet()){
+
+            TextSliderView textSliderView = new TextSliderView(MainActivity.this);
+            textSliderView
+                    .description(name)
+                    .image(Hash_file_maps.get(name))
+                    .setScaleType(BaseSliderView.ScaleType.Fit)
+                    .setOnSliderClickListener(this);
+            textSliderView.bundle(new Bundle());
+            textSliderView.getBundle()
+                    .putString("extra",name);
+            sliderLayout.addSlider(textSliderView);
+        }
+        sliderLayout.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        sliderLayout.setCustomAnimation(new DescriptionAnimation());
+        sliderLayout.setDuration(3000);
+        sliderLayout.addOnPageChangeListener(this);
 
     }
 
-//    @Override
-//    protected void onStop() {
-//
-//        sliderLayout.stopAutoCycle();
-//
-//        super.onStop();
-//    }
+   @Override
+    protected void onStop() {
+
+        sliderLayout.stopAutoCycle();
+
+        super.onStop();
+    }
 
     @Override
     public void onClick(View view) {
@@ -103,49 +103,49 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-//    @Override
-//    public void onSliderClick(BaseSliderView slider) {
-//
-//       // Toast.makeText(this,slider.getBundle().get("extra") + "", Toast.LENGTH_SHORT).show();
-//        if(slider.getBundle().get("extra")== "Mi_Digital Logo") {
-//            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
-//            fullimageint.putExtra("img", Images[0]);
-//            startActivity(fullimageint);
-//        }
-//        if(slider.getBundle().get("extra")== "Book Image1") {
-//            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
-//            fullimageint.putExtra("img", Images[1]);
-//            startActivity(fullimageint);
-//        }
-//        if(slider.getBundle().get("extra")== "Book Image2") {
-//            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
-//            fullimageint.putExtra("img", Images[2]);
-//            startActivity(fullimageint);
-//        }
-//        if(slider.getBundle().get("extra")== "Book Image3") {
-//            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
-//            fullimageint.putExtra("img", Images[3]);
-//            startActivity(fullimageint);
-//        }
-//
-//    }
+    @Override
+    public void onSliderClick(BaseSliderView slider) {
 
-//    @Override
-//    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//
-//    }
-//
-//    @Override
-//    public void onPageSelected(int position) {
-//
-//        Log.d("Slider Demo", "Page Changed: " + position);
-//
-//    }
-//
-//    @Override
-//    public void onPageScrollStateChanged(int state) {
-//
-//    }
+       // Toast.makeText(this,slider.getBundle().get("extra") + "", Toast.LENGTH_SHORT).show();
+        if(slider.getBundle().get("extra")== "Mi_Digital Logo") {
+            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
+            fullimageint.putExtra("img", Images[0]);
+            startActivity(fullimageint);
+        }
+        if(slider.getBundle().get("extra")== "Book Image1") {
+            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
+            fullimageint.putExtra("img", Images[1]);
+            startActivity(fullimageint);
+        }
+        if(slider.getBundle().get("extra")== "Book Image2") {
+            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
+            fullimageint.putExtra("img", Images[2]);
+            startActivity(fullimageint);
+        }
+        if(slider.getBundle().get("extra")== "Book Image3") {
+            Intent fullimageint = new Intent(MainActivity.this, ShowSlideImage.class);
+            fullimageint.putExtra("img", Images[3]);
+            startActivity(fullimageint);
+        }
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+
+        Log.d("Slider Demo", "Page Changed: " + position);
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+}
 
     @Override
     public void onBackPressed() {
